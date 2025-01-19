@@ -58,7 +58,7 @@ def predict_failier(Air_temp, Process_temp, Rot_speed, Torque,
 
     coll.insert_one(user_data_dict)
 
-    st.write("## :green[**User Data Successfully inserted into MongoDB**]")
+    st.write("## :green[**User Data Saved Successfully...**]")
 
     if y_pred[0][0] == 1:
         return "One Failer Occured", y_pred
